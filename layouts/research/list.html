@@ -1,0 +1,14 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="tagline">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<main class="wrap">
+  {{ with .Content }}<div class="prose page-body">{{ . }}</div>{{ end }}
+  <section class="flush">
+    {{ partial "research-cards.html" .Pages.ByWeight }}
+  </section>
+</main>
+{{ end }}

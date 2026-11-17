@@ -1,0 +1,13 @@
+<ul class="dated">
+  {{ range . }}
+  <li>
+    <span class="when">{{ .Date.Format "Jan 2006" }}</span>
+    <div>
+      <a class="news-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Description }}<p class="news-sum">{{ . }}</p>{{ end }}
+    </div>
+  </li>
+  {{ else }}
+  <li><span class="when"></span><p class="muted">No news yet.</p></li>
+  {{ end }}
+</ul>

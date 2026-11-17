@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="tagline">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<main class="wrap">
+  <section class="flush">
+    {{ partial "news-list.html" .Pages.ByDate.Reverse }}
+  </section>
+</main>
+{{ end }}

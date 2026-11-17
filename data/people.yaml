@@ -1,0 +1,35 @@
+# Lab members, shown on the People page in this order.
+# Photos: put a square image in static/images/people/ and set `photo`.
+# Groups with no members are hidden.
+groups:
+  - name: Principal Investigator
+    members:
+      - name: Sheng-Kai Hsu
+        name_zh: 許聖凱
+        role: Principal Investigator
+        photo: images/people/sheng-kai-hsu.jpg
+        bio: >-
+          Population, evolutionary and quantitative geneticist working across plants and animals.
+          Previously a postdoc with Edward Buckler at Cornell University and a Ph.D. student with
+          Christian Schlötterer at Vetmeduni Vienna.
+        links:
+          - { label: Website, url: "https://shengkaihsu.github.io/personal-website/" }
+          - { label: Google Scholar, url: "https://scholar.google.com/citations?user=u_wofDgAAAAJ" }
+          - { label: ORCID, url: "https://orcid.org/0000-0002-6942-7163" }
+
+  - name: Postdoctoral researchers
+    members: []
+
+  - name: Graduate students
+    members: []
+
+  - name: Research assistants
+    members: []
+
+  - name: Alumni
+    style: compact
+    members: []
+    # Example:
+    # - name: Jane Doe
+    #   role: Research assistant, 2026–2027
+    #   now: Ph.D. student, University of X

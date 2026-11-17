@@ -1,0 +1,9 @@
+<div class="cards">
+  {{ range . }}
+  <a class="card" href="{{ .RelPermalink }}">
+    <span class="card-icon" aria-hidden="true">{{ partial "icon" (.Params.icon | default "leaf") }}</span>
+    <h3>{{ .Title }}</h3>
+    <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+  </a>
+  {{ end }}
+</div>

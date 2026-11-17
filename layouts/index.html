@@ -1,0 +1,64 @@
+{{ define "main" }}
+{{ $p := .Site.Params }}
+<header class="home-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ $p.institution }} · {{ $p.location }}</p>
+    <h1>{{ .Site.Title }}</h1>
+    <p class="tagline">{{ $p.tagline }}</p>
+    <div class="lead">{{ $p.intro | markdownify }}</div>
+    <div class="cta">
+      <a class="btn primary" href="{{ "research/" | relURL }}">Our research</a>
+      <a class="btn" href="{{ "join/" | relURL }}">Join us</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  {{ if $p.recruiting }}
+  <aside class="banner">
+    <span class="banner-dot" aria-hidden="true"></span>
+    <p><strong>We're hiring.</strong> {{ $p.recruiting_text }}</p>
+    <a href="{{ "join/" | relURL }}">Open positions →</a>
+  </aside>
+  {{ end }}
+
+  {{ with .Site.GetPage "/research" }}
+  <section>
+    <div class="section-head">
+      <h2>Research</h2>
+      <a class="more" href="{{ .RelPermalink }}">All research →</a>
+    </div>
+    {{ partial "research-cards.html" .Pages.ByWeight }}
+  </section>
+  {{ end }}
+
+  <div class="two-col">
+    {{ with .Site.GetPage "/news" }}
+    <section>
+      <div class="section-head">
+        <h2>News</h2>
+        <a class="more" href="{{ .RelPermalink }}">All news →</a>
+      </div>
+      {{ partial "news-list.html" (first 4 .Pages.ByDate.Reverse) }}
+    </section>
+    {{ end }}
+
+    <section>
+      <div class="section-head">
+        <h2>Recent papers</h2>
+        <a class="more" href="{{ "publications/" | relURL }}">All publications →</a>
+      </div>
+      <ul class="mini-pubs">
+        {{ $cv := .Site.Data.cv }}
+        {{ $all := $cv.preprints | append $cv.publications }}
+        {{ range first 4 (sort $all "year" "desc") }}
+        <li>
+          <a href="{{ .doi }}">{{ .title | markdownify }}</a>
+          <span>{{ .venue | markdownify }} · {{ .year }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+</main>
+{{ end }}

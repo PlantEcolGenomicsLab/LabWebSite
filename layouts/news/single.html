@@ -1,0 +1,12 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ "news/" | relURL }}">News</a> · {{ .Date.Format "2 January 2006" }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="tagline">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<main class="wrap">
+  <article class="prose page-body">{{ .Content }}</article>
+</main>
+{{ end }}

@@ -1,0 +1,55 @@
+baseURL = 'https://plantecolgenomicslab.github.io/LabWebSite/'
+languageCode = 'en-us'
+title = 'Lab of Plant Ecological Genomics'
+disableKinds = ['taxonomy', 'term']
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Top navigation, in order.
+[menus]
+  [[menus.main]]
+    name = 'Research'
+    pageRef = '/research'
+    weight = 10
+  [[menus.main]]
+    name = 'People'
+    pageRef = '/people'
+    weight = 20
+  [[menus.main]]
+    name = 'Publications'
+    pageRef = '/publications'
+    weight = 30
+  [[menus.main]]
+    name = 'News'
+    pageRef = '/news'
+    weight = 40
+  [[menus.main]]
+    name = 'Join us'
+    pageRef = '/join'
+    weight = 50
+
+[params]
+  short_name = 'Plant Ecological Genomics'
+  description = 'The Lab of Plant Ecological Genomics at the Biodiversity Research Center, Academia Sinica, Taiwan, studies how plants adapt to their environments across species and at genome scale.'
+  institution = 'Biodiversity Research Center, Academia Sinica'
+  institution_url = 'https://biodiv.sinica.edu.tw/'
+  location = 'Taipei, Taiwan'
+  email = 'sh2246@cornell.edu'
+  github = 'https://github.com/PlantEcolGenomicsLab'
+  pi_url = 'https://shengkaihsu.github.io/personal-website/'
+
+  # Home page header
+  tagline = 'How do plants adapt to the places they live, and can we predict what evolves next?'
+  intro = '''
+We combine large-scale ecological data, comparative genomics across hundreds of plant species, and
+machine learning to understand how plants adapt to their environments, and to predict evolutionary
+innovation.
+'''
+
+  # Set to false to hide the "We're hiring" banner on the home page.
+  recruiting = true
+  recruiting_text = 'We are building the lab and recruiting postdocs, students and research assistants.'
+
+  # The PI's name as it appears (bold) in data/cv.json author lists.
+  pi_citation_name = '**Hsu, S.-K.**'

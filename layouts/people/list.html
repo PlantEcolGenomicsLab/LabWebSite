@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ $groups := .Site.Data.people.groups }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="tagline">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<main class="wrap">
+  {{ with .Content }}<div class="prose page-body">{{ . }}</div>{{ end }}
+  {{ range $groups }}
+  {{ if .members }}
+  <section class="flush">
+    <h2>{{ .name }}</h2>
+    <div class="people {{ if eq .style "compact" }}compact{{ end }}">
+      {{ range .members }}
+      <article class="person">
+        {{ if .photo }}
+          <img src="{{ .photo | relURL }}" alt="Photo of {{ .name }}" width="120" height="120" loading="lazy">
+        {{ else }}
+          <div class="avatar" aria-hidden="true">{{ range (split .name " ") }}{{ substr . 0 1 }}{{ end }}</div>
+        {{ end }}
+        <div>
+          <h3>{{ .name }}{{ with .name_zh }} <span class="name-zh" lang="zh-Hant">{{ . }}</span>{{ end }}</h3>
+          <p class="role">{{ .role }}</p>
+          {{ with .bio }}<p class="bio">{{ . | markdownify }}</p>{{ end }}
+          {{ with .now }}<p class="bio">Now: {{ . | markdownify }}</p>{{ end }}
+          {{ with .links }}
+          <ul class="person-links">
+            {{ range . }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  {{ with .Site.Params.recruiting }}
+  <aside class="banner">
+    <span class="banner-dot" aria-hidden="true"></span>
+    <p><strong>Want to join?</strong> {{ $.Site.Params.recruiting_text }}</p>
+    <a href="{{ "join/" | relURL }}">Open positions →</a>
+  </aside>
+  {{ end }}
+</main>
+{{ end }}

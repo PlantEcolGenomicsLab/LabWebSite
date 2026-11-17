@@ -1,0 +1,37 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ "research/" | relURL }}">Research</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="tagline">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<main class="wrap">
+  <article class="prose page-body">{{ .Content }}</article>
+
+  {{ with .Params.keywords }}
+  <ul class="tags">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+  {{ end }}
+
+  {{ $dois := .Params.publications }}
+  {{ if $dois }}
+  <section>
+    <h2>Related publications</h2>
+    {{ $cv := .Site.Data.cv }}
+    {{ $all := $cv.preprints | append $cv.publications }}
+    {{ $sel := slice }}
+    {{ range $all }}{{ if in $dois .doi }}{{ $sel = $sel | append . }}{{ end }}{{ end }}
+    {{ partial "publist" $sel }}
+  </section>
+  {{ end }}
+
+  {{ with .Parent }}
+  <section>
+    <h2>Other projects</h2>
+    {{ $others := slice }}
+    {{ range .Pages.ByWeight }}{{ if ne .RelPermalink $.RelPermalink }}{{ $others = $others | append . }}{{ end }}{{ end }}
+    {{ partial "research-cards.html" $others }}
+  </section>
+  {{ end }}
+</main>
+{{ end }}
