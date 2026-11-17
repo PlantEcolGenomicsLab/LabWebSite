@@ -1,7 +1,3 @@
-<svg class="logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-  <defs><linearGradient id="lg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" style="stop-color:var(--green)"/><stop offset="1" style="stop-color:var(--blue)"/></linearGradient></defs>
-  <rect width="32" height="32" rx="8" fill="url(#lg)"/>
-  <path d="M16 26V13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-  <path d="M16 17c-4.5 0-7-2.6-7-7 4.5 0 7 2.6 7 7zM16 14.5c0-4.2 2.4-6.5 6.5-6.5 0 4.2-2.4 6.5-6.5 6.5z" fill="#fff"/>
-  <path d="M11 22.5h10" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.6 2.2"/>
-</svg>
+{{- /* Lab logo. Colours are CSS variables (--logo-*) defined in assets/site.css,
+     so it follows the light/dark toggle. Standalone files: static/images/logo/. */ -}}
+<svg class="logo" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><defs><linearGradient id="lab-logo-grad" x1="0" x2="1"><stop offset=".22" class="l-b1"/><stop offset=".5" class="l-b2"/><stop offset=".78" class="l-b3"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#lab-logo-grad)"/><path class="l-s3" d="M27 7.5C20 7.8 16.6 11 16 16M27 7.5C34 7.6 38.2 8.6 40.5 11M40.5 11C35 12 32.4 13.5 32 16M40.5 11C45.5 12 47.6 13.5 48 16" stroke-width="2.4"/><circle class="l-f2" cx="27" cy="7.5" r="2.6"/><circle class="l-f2" cx="40.5" cy="11" r="2.3"/><circle class="l-f3" cx="16" cy="16.5" r="1.9"/><circle class="l-f3" cx="32" cy="16.5" r="1.9"/><circle class="l-f3" cx="48" cy="16.5" r="1.9"/><path class="l-s1" d="M16 42C15.6 36 13.8 32.5 11 29.5M16 42V27M16 42C16.4 36 18.2 32.5 21 29.5" stroke-width="2.4"/><path class="l-s2" d="M32 42V23" stroke-width="5"/><path class="l-s2" d="M32 34H28V28.5M32 30H36V24.5" stroke-width="3" stroke-linejoin="round"/><path class="l-s1" d="M48 42V33" stroke-width="3"/><circle class="l-f1" cx="48" cy="27" r="6.8"/><path class="l-s1" d="M8 48C13.3 42 18.7 42 24 48S34.7 54 40 48 50.7 42 56 48" stroke-width="3"/><path class="l-s2" d="M8 48C13.3 54 18.7 54 24 48S34.7 42 40 48 50.7 54 56 48" stroke-width="3"/></svg>
