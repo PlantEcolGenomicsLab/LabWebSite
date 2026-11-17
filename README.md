@@ -16,6 +16,8 @@ deployed to GitHub Pages by `.github/workflows/hugo.yaml` on every push to `main
 | News posts | `content/news/*.md` |
 | Publications | synced automatically from [ShengKaiHsu/cv](https://github.com/ShengKaiHsu/cv) by `scripts/sync_cv.py` |
 | Colours and layout | `assets/site.css` |
+| Logo in the header | `layouts/partials/logo.html` (colours: `--logo-*`, `--biome-*` in `assets/site.css`) |
+| Logo files (SVG, 512/192 px PNG) | `static/images/logo/`; browser-tab icon: `static/favicon.svg`, `favicon-32.png` |
 
 Placeholders waiting for real text are marked `TODO(PI)`.
 
@@ -39,3 +41,10 @@ Create `content/news/YYYY-short-name.md` with `title`, `date` and an optional `d
 python3 scripts/sync_cv.py
 hugo server
 ```
+
+## Logo
+
+A rounded phylogeny over three plants from different biomes (grassland grass, desert cactus,
+forest tree) rooted in a DNA double helix. The tree shows the real relationships: the grass
+(a monocot) branches off first, and the cactus and tree (eudicots) are sisters.
+`static/images/logo/logo-512.png` is sized for the GitHub organization avatar.
