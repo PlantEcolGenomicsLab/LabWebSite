@@ -49,7 +49,7 @@ innovation.
 
   # Set to false to hide the "We're hiring" banner on the home page.
   recruiting = true
-  recruiting_text = 'We are building the lab and recruiting postdocs, students and research assistants.'
+  recruiting_text = 'We are hiring a wet-lab manager, and welcome PhD students, interns and postdoctoral fellows.'
 
   # The PI's name as it appears (bold) in data/cv.json author lists.
   pi_citation_name = '**Hsu, S.-K.**'
