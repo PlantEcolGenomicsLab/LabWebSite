@@ -1,9 +1,18 @@
 {{ define "main" }}
 {{ $p := .Site.Params }}
-<header class="home-hero">
-  <div class="wrap">
+<header class="home-banner">
+  <img class="home-banner-img" src="{{ "images/banner/home-2400.jpg" | relURL }}"
+       srcset="{{ "images/banner/home-1200.jpg" | relURL }} 1200w, {{ "images/banner/home-2400.jpg" | relURL }} 2400w"
+       sizes="100vw" width="2400" height="900"
+       alt="Illustration: desert, grassland, alpine and forest plants under a night sky where a family tree of plants is drawn as a constellation, with a glowing DNA helix along the ground">
+  <div class="wrap home-banner-text">
     <p class="eyebrow">{{ $p.institution }} · {{ $p.location }}</p>
     <h1>{{ .Site.Title }}</h1>
+  </div>
+</header>
+
+<section class="home-hero">
+  <div class="wrap">
     <p class="tagline">{{ $p.tagline }}</p>
     <div class="lead">{{ $p.intro | markdownify }}</div>
     <div class="cta">
@@ -11,7 +20,7 @@
       <a class="btn" href="{{ "join/" | relURL }}">Join us</a>
     </div>
   </div>
-</header>
+</section>
 
 <main class="wrap">
   {{ if $p.recruiting }}
