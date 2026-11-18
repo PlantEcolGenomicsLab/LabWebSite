@@ -56,3 +56,6 @@ forest tree) rooted in a DNA double helix. The tree shows the real relationships
 `static/images/logo/logo-512.png` is sized for the GitHub organization avatar.
 For institute listings: `thumbnail-960-logo.png` and `thumbnail-960-name.png` (960×960) and
 `banner-2400x900.png` (2400×900).
+For the BRCAS lab page header: `center-banner-2400x900.png` (no text; the center's template adds
+the lab name at the bottom right and its wave along the bottom), with the vector source in
+`center-banner.svg`.
