@@ -1,0 +1,13 @@
+{{- /* Link to a paper by DOI.
+     {{< paper doi="10.1111/tpj.70319" text="our rhizosphere study" >}}
+   If the DOI is in this page's `publications` list, the link scrolls to it in
+   "Related publications"; otherwise it opens the DOI. */ -}}
+{{- $doi := strings.TrimPrefix "https://doi.org/" (.Get "doi") -}}
+{{- $full := print "https://doi.org/" $doi -}}
+{{- $id := print "pub-" (replaceRE `[^a-z0-9]+` "-" (lower $doi)) -}}
+{{- $local := in (.Page.Params.publications | default slice) $full -}}
+{{- if $local -}}
+<a class="paper-link local" href="#{{ $id }}" title="Jump to this paper in Related publications">{{ .Get "text" | markdownify }}</a>
+{{- else -}}
+<a class="paper-link" href="{{ $full }}" title="Open the paper">{{ .Get "text" | markdownify }}</a>
+{{- end -}}

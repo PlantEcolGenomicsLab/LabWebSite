@@ -31,6 +31,12 @@ Copy one of `content/research/*.md`. Front matter fields:
 - `keywords`: tags shown at the bottom of the page.
 - `publications`: DOIs (as in the CV, e.g. `https://doi.org/...`) to list as related papers.
 
+### Linking to a paper in the text
+
+Use `{{< paper doi="10.1111/tpj.70319" text="our rhizosphere study" >}}`. If that DOI is in
+the page's `publications` list, the link scrolls down to it under "Related publications" (shown
+with a small ↓); otherwise it opens the paper's DOI.
+
 ### Adding a news post
 
 Create `content/news/YYYY-short-name.md` with `title`, `date` and an optional `description`.

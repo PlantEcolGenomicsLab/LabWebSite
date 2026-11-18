@@ -362,3 +362,9 @@ main > .tags { margin-bottom: 32px; }
 .fig { margin: 28px 0; max-width: 860px; }
 .fig img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); background: #fff; }
 .fig figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; max-width: 70ch; }
+
+/* ===== Paper links ({{< paper >}}) ===== */
+.paper-link.local::after { content: "\2193"; font-size: .8em; margin-left: 2px; opacity: .7; }
+.pub { scroll-margin-top: 80px; }
+.pub:target { animation: pub-flash 2.4s ease-out; border-radius: 10px; }
+@keyframes pub-flash { 0%, 40% { background: var(--green-soft); box-shadow: 0 0 0 8px var(--green-soft); } 100% { background: transparent; box-shadow: 0 0 0 8px transparent; } }
