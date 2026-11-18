@@ -1,6 +1,6 @@
 ---
 title: Research
-description: Learning from plant biodiversity how species adapt, and what that teaches us about resilience.
+description: Learning from plant biodiversity how species evolve and adapt, and what that teaches us about conservation and breeding.
 ---
 
 Over millions of years, plants have colonized nearly every environment on Earth. We treat this
