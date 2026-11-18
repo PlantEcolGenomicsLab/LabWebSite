@@ -19,7 +19,7 @@ across many species we expect habitat, adaptive traits and the genes that shape 
 together, even among distantly related species. Mapping these links from **genotype to phenotype
 to fitness** is the key to understanding, and eventually predicting, adaptation.
 
-## What the backbone study showed
+## What our proof of concept showed
 
 We combined the habitats from our [niche work](../niche/) with gene-activity scores
 from our [AI models](../ai-genomics/) in **phylogenetic mixed models**, which separate repeated

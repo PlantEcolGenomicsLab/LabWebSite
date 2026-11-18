@@ -14,7 +14,7 @@ evolution-informed strategies for conservation and crop breeding in a changing c
 
 {{< figure src="images/research/overview.jpg" alt="Overview of the lab's research program: regional sampling and niche characterization, AI models of gene activity, and a genotype–phenotype–fitness map across species, feeding conservation and breeding strategies" caption="Our three themes: (1) ecological niches at scale, (2) AI for cross-species genomics and (3) a genotype–phenotype–fitness map for predicting evolutionary innovation." >}}
 
-## The backbone: convergent adaptation in grasses
+## Proof of concept: convergent adaptation in grasses
 
 Our recent study brought the three themes together for the first time. Using genomes from more
 than 550 grass species across 17 climate zones, we
