@@ -25,7 +25,7 @@ DNA and protein language models, such as ESM2 for proteins and PlantCaduceus (Pl
 DNA, are trained on sequences from many species. Much as chat models learn the grammar of human
 language, they learn the "grammar" of genomes.
 
-- **In the backbone study**, scores from these models detected mutational effects as subtle as
+- **In our proof-of-concept study**, scores from these models detected mutational effects as subtle as
   single amino-acid changes in experimentally characterized mutants, and scaled to tens of
   thousands of genes across hundreds of grass genomes, without any alignments.
 - **Plant foundation models.** With collaborators we develop DNA foundation models for plants,
