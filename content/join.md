@@ -14,7 +14,7 @@ how plants evolve and adapt, combining field sampling, genome sequencing and AI 
 
 ## Wet-lab manager / technician {#lab-manager}
 
-*Full-time · Start date: [to confirm] · Open until filled*
+*Full-time · Master's level · One-year contract, renewable annually · Start from January 2027 · Open until filled*
 
 We are looking for a hands-on, organized person to set up and run our wet lab. You will be the
 lab's molecular-biology anchor: turning plant samples from the field, botanical gardens and
@@ -36,9 +36,10 @@ herbaria into high-quality DNA for genome sequencing.
 
 ### What we are looking for
 
-- A bachelor's or master's degree in a life science, such as biology, botany, agronomy or
-  molecular biology.
-- Hands-on experience with DNA extraction and basic molecular-biology techniques.
+- A master's degree in a life science, such as biology, botany, agronomy or molecular biology.
+  New graduates are welcome.
+- Hands-on experience with DNA extraction and basic molecular-biology techniques, for example
+  from your thesis research.
 - Careful, organized work habits, and enjoyment of troubleshooting protocols.
 - Good communication in Mandarin; working English for reading protocols and talking with
   collaborators.
@@ -53,8 +54,9 @@ lab management; interest in joining field trips.
 - **Training** in genomic techniques and exposure to field biology, bioinformatics and AI.
 - **A collaborative environment** at one of Taiwan's leading biodiversity institutes, with
   strong core facilities.
-- **Salary** according to Academia Sinica's scale, based on degree and experience
-  [to confirm], plus standard benefits.
+- **Salary** from NT$44,968 per month, following Academia Sinica's pay scale for master's-level
+  research assistants; relevant prior experience can be counted toward a higher starting step.
+  Labor and health insurance and year-end bonus as per institute rules.
 
 ### How to apply
 
