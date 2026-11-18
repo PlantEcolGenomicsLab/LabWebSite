@@ -1,0 +1,7 @@
+{{- /* The lab contact email from hugo.toml (params.email), as a mailto link.
+     Optional subject: {{< email subject="Application: wet-lab manager" >}} */ -}}
+{{- $e := site.Params.email -}}
+{{- $href := print "mailto:" $e -}}
+{{- with .Get "subject" -}}{{- $href = print $href "?subject=" (replace (. | urlquery) "+" "%20") -}}{{- end -}}
+<a href="{{ $href | safeURL }}">{{ $e }}</a>
+{{- /**/ -}}
