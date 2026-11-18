@@ -54,3 +54,5 @@ A rounded phylogeny over three plants from different biomes (grassland grass, de
 forest tree) rooted in a DNA double helix. The tree shows the real relationships: the grass
 (a monocot) branches off first, and the cactus and tree (eudicots) are sisters.
 `static/images/logo/logo-512.png` is sized for the GitHub organization avatar.
+For institute listings: `thumbnail-960-logo.png` and `thumbnail-960-name.png` (960×960) and
+`banner-2400x900.png` (2400×900).
