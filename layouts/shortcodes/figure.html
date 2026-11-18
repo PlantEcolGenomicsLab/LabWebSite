@@ -1,0 +1,6 @@
+{{- /* Usage: {{< figure src="images/research/x.jpg" alt="..." caption="..." >}}
+     src is relative to the site root (static/). */ -}}
+<figure class="fig">
+  <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" | default (.Get "caption") }}" loading="lazy">
+  {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

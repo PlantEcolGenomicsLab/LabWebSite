@@ -356,3 +356,9 @@ main > .tags { margin-bottom: 32px; }
 .logo .l-s1 { stroke: var(--logo-1); } .logo .l-s2 { stroke: var(--logo-2); } .logo .l-s3 { stroke: var(--logo-3); }
 .logo .l-f1 { fill: var(--logo-1); } .logo .l-f2 { fill: var(--logo-2); } .logo .l-f3 { fill: var(--logo-3); }
 .logo .l-b1 { stop-color: var(--biome-1); } .logo .l-b2 { stop-color: var(--biome-2); } .logo .l-b3 { stop-color: var(--biome-3); }
+
+/* ===== Research figures and four-card grid ===== */
+.cards { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.fig { margin: 28px 0; max-width: 860px; }
+.fig img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); background: #fff; }
+.fig figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; max-width: 70ch; }
