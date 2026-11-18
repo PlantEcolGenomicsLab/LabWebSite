@@ -3,7 +3,7 @@
   {{ if .raw }}
   <li class="pub"><p class="pub-title">{{ .raw | markdownify }}</p></li>
   {{ else }}
-  <li class="pub{{ if or .first_author .co_first_author }} first{{ end }}{{ if .senior_author }} senior{{ end }}">
+  <li class="pub{{ if or .first_author .co_first_author }} first{{ end }}{{ if .senior_author }} senior{{ end }}"{{ with .doi }} id="pub-{{ replaceRE `[^a-z0-9]+` "-" (lower (strings.TrimPrefix "https://doi.org/" .)) }}"{{ end }}>
     <span class="when">{{ .year }}</span>
     <div>
       <p class="pub-title">

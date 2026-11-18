@@ -23,10 +23,10 @@ replicated experiments of evolution.
 
 - **A habitat pipeline.** Species occurrence records combined with global climate and soil
   databases characterize the habitat of any species.
-- **Environmental transitions.** Across more than 550 grass species, ancestral reconstruction
+- **Environmental transitions.** {{< paper doi="10.64898/2026.06.01.729361" text="Across more than 550 grass species" >}}, ancestral reconstruction
   revealed many independent moves into extreme temperature, water and soil conditions, the
   foundation of our [convergence analyses](../innovation/).
-- **Below-ground ecology.** In Andropogoneae grasses we linked species' rhizosphere nitrogen
+- **Below-ground ecology.** {{< paper doi="10.1111/tpj.70319" text="In Andropogoneae grasses" >}} we linked species' rhizosphere nitrogen
   dynamics to their evolution, pointing to nitrogen-saving strategies for agriculture.
 
 ## Extending to more species

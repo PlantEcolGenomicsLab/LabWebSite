@@ -21,7 +21,7 @@ to fitness** is the key to understanding, and eventually predicting, adaptation.
 
 ## What our proof of concept showed
 
-We combined the habitats from our [niche work](../niche/) with gene-activity scores
+In {{< paper doi="10.64898/2026.06.01.729361" text="our convergent-adaptation study" >}}, we combined the habitats from our [niche work](../niche/) with gene-activity scores
 from our [AI models](../ai-genomics/) in **phylogenetic mixed models**, which separate repeated
 change from shared ancestry.
 
@@ -42,7 +42,7 @@ So far, the environment has stood in for the phenotype. Next we measure the phen
   grass species, measuring molecular and whole-plant traits to fill the phenotype layer between
   genes and environments.
 - **Traits we focus on:** heat and salt resilience, the most pressing challenges for agriculture
-  and grasslands in Taiwan; nutrient use, building on our rhizosphere nitrogen work; the
+  and grasslands in Taiwan; nutrient use, building on our {{< paper doi="10.1111/tpj.70319" text="rhizosphere nitrogen work" >}}; the
   evolution of perennial and annual life histories; and cold and freezing tolerance.
 
 The resulting candidate genes and variants are concrete targets for breeding climate-resilient

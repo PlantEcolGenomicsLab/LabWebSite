@@ -16,7 +16,7 @@ evolution-informed strategies for conservation and crop breeding in a changing c
 
 ## Proof of concept: convergent adaptation in grasses
 
-Our recent study brought the three themes together for the first time. Using genomes from more
+{{< paper doi="10.64898/2026.06.01.729361" text="Our recent study" >}} brought the three themes together for the first time. Using genomes from more
 than 550 grass species across 17 climate zones, we
 
 - **mapped each species' environment** and found the lineages that independently moved into

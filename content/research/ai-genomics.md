@@ -21,16 +21,16 @@ grows steeply as more species are added.
 
 ## Language models for genomes
 
-DNA and protein language models, such as ESM2 for proteins and PlantCaduceus (PlantCAD) for plant
+DNA and protein language models, such as {{< paper doi="10.1126/science.ade2574" text="ESM2" >}} for proteins and {{< paper doi="10.1073/pnas.2421738122" text="PlantCaduceus (PlantCAD)" >}} for plant
 DNA, are trained on sequences from many species. Much as chat models learn the grammar of human
 language, they learn the "grammar" of genomes.
 
-- **In our proof-of-concept study**, scores from these models detected mutational effects as subtle as
+- **{{< paper doi="10.64898/2026.06.01.729361" text="In our proof-of-concept study" >}}**, scores from these models detected mutational effects as subtle as
   single amino-acid changes in experimentally characterized mutants, and scaled to tens of
   thousands of genes across hundreds of grass genomes, without any alignments.
 - **Plant foundation models.** With collaborators we develop DNA foundation models for plants,
-  from flowering plants (PlantCAD2) to bryophytes (BryoCAD), and use them to evaluate and improve
-  gene annotation (reelGene, GeneCAD).
+  from flowering plants ({{< paper doi="10.1016/j.xgen.2026.101329" text="PlantCAD2" >}}) to bryophytes ({{< paper doi="10.64898/2026.11.09.765485" text="BryoCAD" >}}), and use them to evaluate and improve
+  gene annotation ({{< paper doi="10.1111/tpj.70483" text="reelGene" >}}, {{< paper doi="10.1101/2025.10.31.685877" text="GeneCAD" >}}).
 
 ## Extending to better models
 
