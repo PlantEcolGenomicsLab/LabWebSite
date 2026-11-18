@@ -8,25 +8,36 @@ history as a vast, replicated natural experiment: when distantly related species
 adapt to the same conditions, the changes their genomes share point to the genes and traits that
 matter.
 
-Our lab connects **genotype, phenotype and environment across species**. We combine biodiversity
-sampling, comparative genomics across hundreds of genomes, and genomic AI models, with a focus on
-grasses (Poaceae), the family that feeds the world and dominates many of its ecosystems. The goal
-is evolution-informed strategies for conservation and crop breeding in a changing climate.
+Our lab connects **environment, genotype and phenotype across species**, with a focus on grasses
+(Poaceae), the family that feeds the world and dominates many of its ecosystems. The goal is
+evolution-informed strategies for conservation and crop breeding in a changing climate.
 
-{{< figure src="images/research/overview.jpg" alt="Overview of the lab's research program: regional sampling, AI models of gene activity, and a genotype–phenotype–fitness map across species, feeding conservation and breeding strategies" caption="From biodiversity to resilience: regional sampling and niche characterization (left) and AI models of gene activity (right) feed a genotype–phenotype–fitness map across species (bottom)." >}}
+{{< figure src="images/research/overview.jpg" alt="Overview of the lab's research program: regional sampling and niche characterization, AI models of gene activity, and a genotype–phenotype–fitness map across species, feeding conservation and breeding strategies" caption="Our three themes: (1) ecological niches at scale, (2) AI for cross-species genomics and (3) a genotype–phenotype–fitness map for predicting evolutionary innovation." >}}
 
-## The backbone
+## The backbone: convergent adaptation in grasses
 
-Our recent work on nearly 700 grass genomes established the framework: map each species'
-environment, find the lineages that independently moved into similar extremes, and use
-phylogenetic models and genomic language models to find the genome-wide and gene-level changes
-that repeatedly go with those moves.
+Our recent study brought the three themes together for the first time. Using genomes from more
+than 550 grass species across 17 climate zones, we
 
-## Three ways we are extending it
+- **mapped each species' environment** and found the lineages that independently moved into
+  extreme temperature, water and soil conditions;
+- **scored gene activity with genomic language models**, directly from sequence;
+- **tested for convergence with phylogenetic mixed models**, which account for shared ancestry.
 
-- **Species.** Grasses of Taiwan and Southeast Asia are among the most diverse yet least
-  sequenced. We are filling that gap, and will later expand to other plant families.
-- **Traits.** From where species live to what they do: common-garden experiments that link genes
-  to heat, salt and nutrient-use phenotypes.
-- **AI models.** Genomic language models that predict how gene function differs between species,
-  directly from sequence.
+Lineages entering similar environments shifted in the same directions in proteome-wide
+properties, such as the nitrogen-to-carbon balance of their proteins, and several hundred genes
+were repeatedly associated with environmental change. Adaptation in grasses appears to follow
+partly predictable routes.
+[Read the preprint](https://doi.org/10.64898/2026.06.01.729361) (*bioRxiv*, 2026).
+
+## Where we are going
+
+Each theme now grows along its own axis:
+
+- **[Ecological niches at scale](niche/) → more species.** Sampling and sequencing
+  the grasses of Taiwan and Southeast Asia, then other plant families.
+- **[AI for cross-species genomics](ai-genomics/) → better models.** From zero-shot scores to
+  models fine-tuned to predict how gene function differs between species.
+- **[Predicting evolutionary innovation](innovation/) → more traits.**
+  Common-garden experiments that add measured phenotypes, from heat and salt tolerance to
+  nutrient use.

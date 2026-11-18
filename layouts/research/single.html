@@ -1,7 +1,7 @@
 {{ define "main" }}
 <header class="page-head">
   <div class="wrap">
-    <p class="eyebrow"><a href="{{ "research/" | relURL }}">Research</a></p>
+    <p class="eyebrow"><a href="{{ "research/" | relURL }}">Research</a>{{ with .Params.eyebrow }} · {{ . }}{{ end }}</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="tagline">{{ . }}</p>{{ end }}
   </div>
@@ -27,7 +27,7 @@
 
   {{ with .Parent }}
   <section>
-    <h2>Other projects</h2>
+    <h2>Other themes</h2>
     {{ $others := slice }}
     {{ range .Pages.ByWeight }}{{ if ne .RelPermalink $.RelPermalink }}{{ $others = $others | append . }}{{ end }}{{ end }}
     {{ partial "research-cards.html" $others }}
