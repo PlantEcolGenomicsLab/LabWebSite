@@ -36,7 +36,7 @@ herbaria into high-quality DNA for genome sequencing.
 
 ### What we are looking for
 
-- A master's degree in life science, plant biology, agronomy or molecular biology.
+- A master's degree in life science, plant biology, genetics or molecular biology.
   New graduates are welcome.
 - Hands-on experience with DNA extraction and basic molecular-biology techniques, for example
   from your thesis research.
